@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div>
+            <div class="Upper">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <input type="text" class="digit" id="input">
+            </div>
+        </div>
+            <div class="Lower" id="Lower">
+                <div class="row">
+                    <button class="FirstColumn" id="resetButton" onclick="reset()">AC</button>
+                    <button class="ThirdColumn" onclick="back()">Del</button>
+                    <button class="FourthColumn" onclick="divide()">/</button>
+                </div>
+
+                <div class="row">
+                    <button class="FirstColumn" onclick="input(7)" id="dig7" value="7">7</button>
+                    <button class="SecondColumn" onclick="input(8)" id="dig8" value="8">8</button>
+                    <button class="ThirdColumn" onclick="input(9)" id="dig9" value="9">9</button>
+                    <button class="FourthColumn" onclick="multiply()">x</button>
+                </div>
+
+                <div class="row">
+                    <button class="FirstColumn" onclick="input(4)" id="dig4" value="4">4</button>
+                    <button class="SecondColumn" onclick="input(5)" id="dig5" value="5">5</button>
+                    <button class="ThirdColumn" onclick="input(6)" id="dig6" value="6">6</button>
+                    <button class="FourthColumn" onclick="sub()">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="FirstColumn" onclick="input(1)" id="dig1" value="1">1</button>
+                    <button class="SecondColumn" onclick="input(2)" id="dig2" value="2">2</button>
+                    <button class="ThirdColumn" onclick="input(3)" id="dig3" value="3">3</button>
+                    <button class="FourthColumn" onclick="add()">+</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="input(0)" id="dig0" value="0">0</button>
+                    <button class="ThirdColumn" onclick="input1()" id="." value=".">.</button>
+                    <button class="FourthColumn" onclick="ansDisplay()">=</button>
+                </div>
+
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
